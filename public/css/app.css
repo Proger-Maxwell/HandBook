@@ -1,0 +1,583 @@
+@font-face {
+    font-family: MuseoSansCyrl-100; /* Имя шрифта */
+    src: url(/fonts/MuseoSansCyrl-100.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: MuseoSansCyrl-300; /* Имя шрифта */
+    src: url(/fonts/MuseoSansCyrl-300.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: MuseoSansCyrl-500; /* Имя шрифта */
+    src: url(/fonts/MuseoSansCyrl-500.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: MuseoSansCyrl-700; /* Имя шрифта */
+    src: url(/fonts/MuseoSansCyrl-700.ttf); /* Путь к файлу со шрифтом */
+}
+
+@font-face {
+    font-family: MuseoSansCyrl-900; /* Имя шрифта */
+    src: url(/fonts/MuseoSansCyrl-900.ttf); /* Путь к файлу со шрифтом */
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1350px !important;
+    }
+}
+
+
+/* ============================================================================================================== */
+body {
+    background-color: #f2f2f2;
+    font-family: "Museo Sans Cyrl 100", serif;
+    font-size: 16px;
+    color: #212226;
+    line-height: 1.3;
+    letter-spacing: 0.007px;
+
+
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+
+}
+
+.logo {
+
+    max-width: 100%;
+    width: 100%;
+
+
+}
+
+.container {
+
+    max-width: 1100px;
+
+}
+
+.header {
+
+    background-color: #d8ebf2;
+    position: relative;
+
+
+}
+
+
+
+
+.header__row {
+
+    padding: 25px 0 30px 0;
+
+}
+
+/*
+.header__row:before{
+
+    content: '';
+    position: absolute;
+    background-color: #1b1e21;
+    height: 10px;
+    width: calc(100% - 90px);
+    top: 140px;
+    z-index: 1;
+    left: 15.4%;
+
+}*/
+
+.welcome {
+
+    background-color: #d8ebf2;
+    position: relative;
+
+
+}
+
+.welcome__row {
+
+
+    padding: 40px 0 40px 0;
+
+}
+
+.welcome__form {
+
+    background-color: #ffffff;
+    position: relative;
+    padding: 30px 0 30px 0;
+
+}
+
+.welcome__content {
+
+     text-align: center;
+
+    height: 100%;
+
+    padding: 50px 0 0 0;
+
+}
+
+.welcome__title {
+    font-family: "Museo Sans Cyrl 700", serif;
+    font-size: 42px;
+    line-height: 1.2;
+
+
+
+}
+
+.welcome__text {
+    font-family: "Museo Sans Cyrl 100", serif;
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 0;
+
+
+}
+
+.about {
+
+    text-align: center;
+    position: relative;
+
+
+}
+
+.about__row {
+
+
+    padding: 40px 0 40px 0;
+
+}
+
+.about__title {
+
+    font-family: "Museo Sans Cyrl 700", serif;
+    font-size: 30px;
+    line-height: 1.2;
+
+
+}
+.about__img {
+
+    max-width: 100%;
+
+
+}
+
+.advantages {
+
+    background-color: #d8ebf2;
+    position: relative;
+
+
+}
+
+.advantages__row {
+
+    padding: 40px 0 40px 0;
+
+}
+
+.advantages__block {
+
+    text-align: center;
+
+}
+
+.advantages__img {
+
+    padding: 0 0 10px 0;
+
+}
+
+.footer {
+
+    background-color: #A4A5A6;
+    position: relative;
+
+}
+
+.footer__row {
+
+    padding: 40px 0 40px 0;
+
+}
+
+.wrapper__button {
+    text-align: -webkit-right;
+    padding: 5px;
+}
+
+
+@media (min-height: 1200px) {
+    .wrapper__button {
+        text-align: -webkit-center !important;
+        padding: 5px;
+    }
+}
+
+.footer-line {
+
+    background-color: #212226;
+    position: relative;
+
+
+}
+
+.footer-line__row {
+
+
+    padding: 2px 0 2px 0;
+
+}
+
+.footer::before {
+
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    height: 10px;
+
+    top: 145px;
+
+
+}
+
+.footer-line__text {
+
+    color: #A4A5A6;
+    margin-bottom: 0rem;
+    font-size: 14px;
+    padding-left: 5px;
+
+}
+
+.button {
+
+    border: transparent;
+    font-size: 20px;
+    color: #212226;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+    outline: none !important;
+    padding-bottom: 4px;
+    padding-left: 4px;
+
+}
+
+.button_empty {
+
+    background: transparent;
+    font-size: 20px;
+    color: #212226;
+    text-decoration: none;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    position: relative;
+
+}
+
+.button_full {
+
+    background: #f0f1f2;
+    font-size: 20px;
+    color: #212226;
+    text-decoration: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 24px;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+
+}
+
+.button_full_blue {
+
+    background: #d8ebf2;
+    font-size: 20px;
+    color: #212226;
+    text-decoration: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 24px;
+    text-align: center;
+    position: relative;
+    padding: 5px;
+
+}
+
+.button_special {
+
+    font-family: "Museo Sans Cyrl 500", serif;
+    background: #f0f1f2;
+    font-size: 27px;
+    color: #212226;
+    text-decoration: none;
+    width: 300px;
+    height: 70px;
+    padding: 17px;
+    border-radius: 50px;
+    text-align: center;
+    position: relative;
+
+}
+
+.welcome__form {
+
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+}
+
+.form{
+
+    width: 80%;
+
+}
+
+.form__field {
+
+    width: 100%;
+    position: relative;
+    height: 50px;
+    overflow: hidden;
+
+}
+
+.form__field input {
+
+    width: 100%;
+    height: 100%;
+    color: #4e555b;
+    padding-top: 15px;
+    border: none;
+    outline: none;
+}
+
+.form__checker{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 80%;
+}
+
+.form__button{
+    margin: 20px 0 0 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.active{
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.form label {
+
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100px;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+
+}
+
+.form label::after {
+
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #212226;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.form__span {
+
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.3s ease;
+
+}
+
+.form input:focus + .form__label .form__span,
+.form input:valid + .form__label .form__span{
+
+    transform: translateY(-115%);
+    font-size: 14px;
+    color: #4e555b;
+
+}
+
+.form input:focus + .form__label::after,
+.form input:valid + .form__label::after{
+
+    transform: translateX(0%);
+
+}
+
+.hidden{
+    display: none;
+    
+}
+
+.bold{
+    font-family: "Museo Sans Cyrl 700", serif;
+}
+.semibold{
+    font-family: "Museo Sans Cyrl 300", serif;
+}
+
+.main-text{
+    font-size: 48px;
+}
+
+.priorite-text{
+    font-size: 32px;
+}
+
+.wrapper__main-info{
+    font-size: 38px;
+    line-height: 0.7;
+}
+
+.tab__row {
+    padding: 40px 0 40px 0;
+}
+
+.tab__content {
+
+   height: 100%;
+   /* padding: 50px 0 0 0; */
+
+}
+
+.tab__title {
+   font-family: "Museo Sans Cyrl 700", serif;
+   font-size: 42px;
+   line-height: 1.2;
+
+
+
+}
+
+.tab__text {
+   font-family: "Museo Sans Cyrl 100", serif;
+   font-size: 20px;
+   line-height: 1.2;
+   margin-bottom: 0;
+
+
+}
+
+.tab__tabs{
+    display: flex;
+    padding: 15px 0;
+
+}
+
+.button__tab{
+    margin: 0 10px 0 0;
+    
+}
+
+.fa{
+    font-size: 14px !important;
+}
+
+.blocks__row {
+    padding: 0 0 20px 0px;
+}
+
+.blocks__content {
+
+   height: 100%;
+   /* padding: 50px 0 0 0; */
+
+}
+
+.blocks__title {
+   font-family: "Museo Sans Cyrl 700", serif;
+   font-size: 42px;
+   line-height: 1.2;
+
+
+
+}
+
+.blocks__text {
+   font-family: "Museo Sans Cyrl 100", serif;
+   font-size: 20px;
+   line-height: 1.2;
+   margin-bottom: 0;
+
+
+}
+
+.blocks__tabs{
+    display: flex;
+    padding: 15px 0;
+
+}
+
+.blocks__block{
+    padding: 0 0 0 20px;
+}
+
+.block{
+    background-color:#f8f8f8;
+    border-radius: 15px;
+    padding: 20px;
+    line-height: 0.7;
+}
+.block__position{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.block__title{
+    font-size: 20px;
+}
+
+.block__text{
+    font-size: 20px;
+}
+
+
+.wrapper__sticky{
+    position: absolute;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    bottom: 0;  /* не рекомендуется для высоких элементов, так как на коротких устройствах он загородит собой информацию родителя */ 
+    min-height: 2em;
+    background: lightpink;
+  }
+
+  
