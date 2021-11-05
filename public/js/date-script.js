@@ -1,4 +1,4 @@
-now = new Date();
+let now = new Date();
 let dd = now.getDate();
 if (dd < 10) dd = '0' + dd;
 let mm = now.getMonth() + 1;
@@ -10,9 +10,9 @@ let dp = '10';
 let mp = '8';
 let yp = '2020';
 
-pastday = dd-dp;
-pastmonth = mm-mp;
-pastyear = yy-yp;
+let pastday = dd-dp;
+let pastmonth = mm-mp;
+let pastyear = yy-yp;
 document.getElementById("footer-line__day").innerHTML =
     'From 10.08.2020 to ' + dd + '.' + mm + '.' + yy +' All records in one place';
 
