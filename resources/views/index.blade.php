@@ -29,15 +29,15 @@
                             
                             <div class="form__checker">
                                 <a href="/" data-ca-target-id="" class="active" rel="nofollow">Login</a>
-                                <a href="/" data-ca-target-id="" class="disable" rel="nofollow">Sing Up</a>
+                                <a href="/" data-ca-target-id="" class="" rel="nofollow">Sign up</a>
                             </div>
                             <!--Login form-->
                             <div class="form">
                                 <form method="post" action="">
                                 <div class="form__field">
-                                    <input type="text" name="login" autocomplete="off" required/>
-                                    <label for="login" class="form__label">
-                                        <span class="form__span">Login</span>
+                                    <input type="text" name="Email" autocomplete="off" required/>
+                                    <label for="Email" class="form__label">
+                                        <span class="form__span">Email</span>
                                     </label>
                                 </div>
                                 <div class="form__field">
@@ -53,7 +53,7 @@
                             </div>
 
                             
-                            <!--Sing Up form-->
+                            <!--Sign up form-->
                             <div class="form hidden">
                                 <form method="post" action="">
                                 <div class="form__field">
@@ -64,12 +64,18 @@
                                 </div>
                                 <div class="form__field">
                                     <input type="password" name="password" autocomplete="off" required/>
-                                    <label for="login" class="form__label">
+                                    <label for="password" class="form__label">
                                         <span class="form__span">Password</span>
                                     </label>
                                 </div>
+                                <div class="form__field">
+                                    <input type="password" name="confirm-password" autocomplete="off" required/>
+                                    <label for="confirm-password" class="form__label">
+                                        <span class="form__span">Confirm password</span>
+                                    </label>
+                                </div>
                                 <div class="form__button">
-                                    <a href="/" data-ca-target-id="" class="main-btn" rel="nofollow">Login</a>
+                                    <a href="/" data-ca-target-id="" class="main-btn" rel="nofollow">Sign up</a>
                                 </div>
                             </form>
                             </div>

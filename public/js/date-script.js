@@ -23,20 +23,27 @@ document.getElementById("footer-line__counter").innerHTML =
 
 let buttons;
 let form;
+let selector;
 buttons = document.querySelectorAll('div .form__checker > a');
 // console.log(buttons);
 buttons.forEach(function(button){
-    button.onclick = function(){
-        // button.preventDefault();
+    button.addEventListener('click', function(event, but){
+        event.preventDefault();
         // alert(button.textContent);
         form = document.querySelectorAll('div .form');
-        if(button.textContent == 'Login'){
-
-            form[0].classList.toggle('hidden');
-            form[1].classList.toggle('hidden');
+        selector = document.querySelectorAll('div.form__checker > a');
+        console.log(event.target.textContent);
+        console.log(selector);
+        if(event.target.textContent == 'Login'){
+            selector[0].classList.add('active');
+            selector[1].classList.remove('active');
+            form[1].classList.add('hidden');
+            form[0].classList.remove('hidden');
         }else{
-            form[0].classList.toggle('hidden');
-            form[1].classList.toggle('hidden');
+            selector[1].classList.add('active');
+            selector[0].classList.remove('active');
+            form[1].classList.remove('hidden');
+            form[0].classList.add('hidden');
         }
-    };
+    });
 });
